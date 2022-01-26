@@ -1,4 +1,4 @@
-     # COMPUTER NETWORKING
+ # COMPUTER NETWORKING
 
 
 **What is network ?**
@@ -13,21 +13,22 @@
      e.g TCP, I.P, UDP
      _Internet Society_ are responsible for creating these protocols.
 
-     **World Wide Web**
+ **World Wide Web**
      -> The world wide web commonly known as the web, is an information system where documents and other web resources are identified by URL's, which may be interlinked by hyperlinks and are accessible over the internet.
 
-     ## Client Srever Architecture
+ ## Client Srever Architecture
+
      ![client srever architecture](https://madooei.github.io/cs421_sp20_homepage/assets/client-server-1.png)
 
-     **Some Basic Protocols:**
+ **Some Basic Protocols:**
 - `TCP - Transmission Control Protocols`
-   ->It ensures that the data will reach its destination and not get corrupted on the way i.e 100% of the datawill be received.
+->It ensures that the data will reach its destination and not get corrupted on the way i.e 100% of the datawill be received.
 - `UDP - User Datagram Protocols`
-  -> It is a lightweight data transport protocol.
-  -> It provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets.
+-> It is a lightweight data transport protocol.
+-> It provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets.
 - `HTTP - Hyper Text Transfer Protocol`
-  -> It is an application-layer protocol for transmitting hypermedia documents, such as HTML.
-  -> Is used by web browsers, this is the data which be being transferred between clients and servers.
+-> It is an application-layer protocol for transmitting hypermedia documents, such as HTML.
+-> Is used by web browsers, this is the data which be being transferred between clients and servers.
 
   
 An **IP address** is a unique address that identifies a device on the internet or a local network.
@@ -45,9 +46,9 @@ Command used to check the ip address of you own computer
 
 ![internet connection](https://smartnetworkgeek.com/wp-content/uploads/2021/03/Modem-Router-Diagram-1024x728.jpeg)
 
--> Modem assigns these IP addresses through DHCP
-     *DHCP - Dynamic Host Configuration Protocol
--> Modem/Router will decide who requested it. It is done by using **NAT - Network Access Translator**
+- Modem assigns these IP addresses through DHCP
+- DHCP - Dynamic Host Configuration Protocol
+- Modem/Router will decide who requested it. It is done by using **NAT - Network Access Translator**
 -> IP Address decides which device to send the data whereas Port numbers are used to identify which application made that request
 - Ports are basically 16 bit numbers
 -  HTTP  port 80
