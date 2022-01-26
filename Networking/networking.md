@@ -18,17 +18,19 @@
 
  ## Client Srever Architecture
 
-     ![client srever architecture](https://madooei.github.io/cs421_sp20_homepage/assets/client-server-1.png)
+![client srever architecture](https://madooei.github.io/cs421_sp20_homepage/assets/client-server-1.png)
 
  **Some Basic Protocols:**
 - `TCP - Transmission Control Protocols`
-->It ensures that the data will reach its destination and not get corrupted on the way i.e 100% of the datawill be received.
-- `UDP - User Datagram Protocols`
--> It is a lightweight data transport protocol.
--> It provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets.
-- `HTTP - Hyper Text Transfer Protocol`
--> It is an application-layer protocol for transmitting hypermedia documents, such as HTML.
--> Is used by web browsers, this is the data which be being transferred between clients and servers.
+It ensures that the data will reach its destination and not get corrupted on the way i.e 100% of the datawill be received.
+- `UDP - User Datagram Protocols`</br>
+ It is a lightweight data transport protocol.</br>
+
+  It provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets.
+- `HTTP - Hyper Text Transfer Protocol`</br>
+ It is an application-layer protocol for transmitting hypermedia documents, such as HTML.</br>
+
+  It is used by web browsers, this is the data which be being transferred between clients and servers.
 
   
 An **IP address** is a unique address that identifies a device on the internet or a local network.
@@ -65,7 +67,7 @@ Command used to check the ip address of you own computer
 - `WAN` Wide Area Network
    It extends over large geographic area such as countries.
 
-**SONET:** Synchronous Optical Networking
+**SONET:** Synchronous Optical Networking</br>
 **Frame relay:** A wave for connecting local area network to the wide area like internet
 
 ## MODEM, ROUTER
