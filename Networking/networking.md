@@ -154,5 +154,75 @@ i.p address tells us which device we are working with while ports tell us which 
 
 There may be possibility of many processes of single application is running like openung up many tabs in chrome when the response is coming back how it will know which tab to give data. this can be resolved using <i>Ephemeral ports.</i>
 
+<b>HTTP</b>
+
+- It is a client server protocol and it tells us how you request this data from the server and also tell us how the server sends back data to the client.
+- When a client makes a request to the server it is known as HTTP request, when a server sendsback response to the client it is HTTP response.
+- HTTP uses TCP
+- It is a stateless protocol(server will not store any information about client by default.).
+- Method is basically telling the server what to do.
+
+<b>HTTP Methods</b>
+
+- GET: You are requesting some data.
+- POST: client gives some data to server e.g forms.
+- PUT: puts data at a specific location 
+- DELETE: To delete data from the server.
+
+<b>Error/status codes:</b>
+
+When you send a request to the the server, you need some sort of a way to know whether the request is successful or not. for this there exists status code.
+
+    200 - request successful
+    404 - not found
+    400 - bad request
+    500 - internal server error
+
+    1xx --> Informational category
+    2xx --> Success code
+    3xx --> Redirecting purpose
+    4xx --> Client error
+    5xx --> Server error
+
+<b>Cookies</b>
+
+- It is a unique string stored on a client browser.
+- When you visit the web page for the first time, the cookie is set and whenever you make a new request, the request header cookie will be sent.
+
+## How email works
+
+- Application layer protocol: SMTP(simple mail transfer protocol), POP3 PostOffice Protocol.
+![image](https://miro.medium.com/max/1130/1*9ZW46uHlvlyvJb5moQs9aQ.jpeg)
+- Command to view ip address of SMTP server `nslookup -type=mx gmail.com`. 
+- IMAP - Internet message access protocol: Allows to view emails on multiple devices.
+
+## DNS Domain Name System
+
+- Domain names are mapped to ip address we use servicess to look up into this. The most popular service is DNS.(Imagine DNS server as a phonebook)
+![image](https://academy.bit2me.com/wp-content/uploads/2019/05/49_DNS.png)
+- When we type google.com http protocol take that domain name and use DNS to find the ip address and afterwards it connects to the server.
+
+- <b>Root DNS server</b>: Root servers, or DNS root servers, are name servers that are responsible for the functionality of the DNS as well as the entire Internet. They're the first step in the name resolution of any domain name, meaning they translate domain names into IP addresses.
+- <b>TLD Top Level Domain</b>:A top-level domain is one of the domains at the highest level in the hierarchical Domain Name System of the Internet after the root domain. eg .com,.org,.edu,.gov,.mil,.io ...
+![image](https://info.varonis.com/hubfs/Imported_Blog_Media/how-dns-works@2x.png?hsLang=en)
+- <b>Authoritative DNS</b>:It is the system that takes an address, like google.com, and provides an answer about the resources in that zone. The typical transaction looks something like this: User types an address into a web browser, or an application calls out to a given name of a resource on the Internet.
+- Command to locate DNS server `dig example.com`
+
+# Transport Layer:
+
+- Data transfered between one computer to another is done by using network layer
+- Transport layer is a layer that lies over device
+- The role of the transport layer is to take the data from the network to the application.
+![image](https://www.tutorialandexample.com/wp-content/uploads/2020/10/image-287.png)
+- Provides abstraction, located on the devices.
+- Data travels in packets.
+- Transport layer will attach these socket port numbers to that packets.
+![image](https://i.imgur.com/P4ZbIPb.png)
+- It also takes care of congestion control.
+- What is congestion?
+A state occurs in the network layer when the message traffic is so heavy that it slows down network response time.
+- Congestion control algorithms built in TCP.
+
+
 
 
