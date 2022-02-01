@@ -1,5 +1,9 @@
  # COMPUTER NETWORKING
 
+## Resources
+1.[Complete Networking Course](https://www.youtube.com/watch?v=IPvYjXCsTg8)
+
+2.[Networking](https://www.youtube.com/watch?v=Mad4kQ5835Y&list=PL7zRJGi6nMRzg0LdsR7F3olyLGoBcIvvg)
 
 **What is network ?**
 
@@ -222,6 +226,122 @@ When you send a request to the the server, you need some sort of a way to know w
 - What is congestion?
 A state occurs in the network layer when the message traffic is so heavy that it slows down network response time.
 - Congestion control algorithms built in TCP.
+
+## Checksum
+A checksum is a value that represents the number of bits in a transmission message and is used by IT professionals to detect high-level errors within data transmissions. ... The common protocols used to determine checksum numbers are the transmission control protocol (TCP) and the user diagram protocol (UDP).
+
+## Timers
+- 
+- 
+
+# Transport Layer Protocol.
+
+## UDP - User Datagram Protocol
+
+- Data may or may not delivered,may change,not be in order.
+- Connectionless Protocol
+- UDP uses checksums if there any error it won't care.
+![image](https://i2.wp.com/ipwithease.com/wp-content/uploads/2018/01/091-udp-user-datagram-protocol-01.png)
+Header 8 bytes, data 2^16 -8;
+
+**Uses of UDP**
+- Very fast,Used in video conferencing apps, DNS uses udp, gaming.
+    `sudo tcpdump -c 5`
+
+## TCP - Transmission Control Protocol
+- Application layer sends lot of raw data. TCP segments this data, divide into chunks, add headers...Simultaneously it collects data from network layer and the small chuncks are put in to one in the receiving end.
+- Congestion control
+- Takes care of: When data does not arrive, maintain the order of data.  
+
+**Features**
+- Connection oriented
+- error control, congestion control, full duplex.
+
+**__3- Way Handshake__**
+
+![image](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-is-a-tcp-3-way-handshake-process-three-way-handshaking-establishing-connection-6a724e77ba96e241.jpg)
+
+Sequence number(m) is a random number.
+
+# Network Layer
+Here we work with routers
+
+![image](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-is-rip-routing-information-protocol-example-0b0fad96363f15fc.jpg)
+
+- Every router has a network address
+- Every router will check whether the packet is for that router, if not then it will forward that using <i>Forwarding table</i> in routing table.
+- Command to trace route is:
+
+      tracert example.com
+<b> Control plane is used to build these routing tables.</b>
+
+- Static routing and Dynamic routing.
+
+## Network layer protocol
+**ip- Internet Protocol**
+
+IPv4 --> 32bit, 4 words
+
+IPv6 --> 128bits
+
+- Classes 
+
+|CLASS|IP ADDRESS|DEFAULT SUBNET MASK|
+|-----|----------|-------------------|
+|A|0-126|255.0.0.0|
+|B|128-191|255.255.0.0|
+|C|192-223|255.255.255.0|
+|D|224-239|N/A|
+|E|240-255|N/A|
+
+**Subnet Masking**
+
+Subnet mask is going to mask the network part of the ip address and leaves us the host part.
+
+eg: 15.0.0.0/30 this basically means the first 30 bits are my subnet/network part.
+
+<b>Reserved address:</b>
+
+127.0.0.0/8
+eg: localhost: 127.0.0.1(loopback address) used for testing.
+- <b>Packets</b>: Header is of 20bytes. It contains IPv,length,identification number,flags,protocols,checksum,TTL...
+- TTL(Time to live): It is a number, after that number of hops the packet doesn't reach, then it eill leave.
+
+**IPv6**
+- IPv4: 2^32 ~ 4.3billion
+- IPv6: 2^32*4=2^128
+- Formate - a.a.a.a.a.a.a.a(hexadecimal)
+
+**Middleboxes(Firewalls)**
+- They are extra devices that also interacts with ip packets.
+- Mostly it willl be in network layer but it can also be in transport layer.
+- Firewall is of two types.1. Connected to global network.2. Your local network.
+- It filters out ip packets based on various rules.
+- Stateless and stateful firewalls.
+
+## Network Address Translator(NAT):
+
+It is a method of mapping anip address space into another by modifying network address information in the ip header of packets while they are in transit across a traffic routing device.
+![image](https://i0.wp.com/edifyclue.in/wp-content/uploads/2021/02/network-address-translation-1.png?resize=500%2C300&ssl=1)
+
+# Data Link Layer
+
+The data packets that are receiving from the network layer .The data link layer is responsible to send these packets over a physical layer.
+- In data link layer, the devices communicate with each other using <b>Data Link Layer Addresss(MAC address)</b>
+
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6qSgckwrOXctaHzQ62ZVfLrOrTQBU65_gw&usqp=CAU)
+
+Let's say device 1 needs to send data to device 4, first it will lookup in it's <i>cache</i>, If it does not have then it will ask other devices. This is known as ARP Cache(Address Resolution Protocol)
+
+      arp -a
+
+
+
+
+
+
+
+
 
 
 
