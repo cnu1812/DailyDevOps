@@ -1,0 +1,91 @@
+student: !!seq
+ - marks
+ - roll_no
+ - name
+
+ # some of the keys of the seq will be empty
+ # sparse seq
+ sparse seq:
+  - hey
+  - how
+  -
+  - null
+  - sup
+
+  # nested seq
+-
+ - mango
+ - apple
+ - water melon
+-
+ - marks
+ - name
+ - roll-no 
+
+ # key: value pairs are called maps
+ !!maps
+
+ # nested mappings: map within an map
+ name: sine
+ role:
+   age: 54
+   job: maths
+
+# same as
+name: sine
+role: {age: 54, job: maths}
+
+# pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+  - job: student
+  - job: teacher
+
+# same as
+pair example: !!pairs [job: student, job: teacher]
+
+# !!set will allow you to have unique values
+names: !!set
+  ? Sreenivas
+  ? John
+  ? Rahul
+ 
+ # dictionary !!omap
+ people: !!omap
+   - Kunal:
+       name: Kunal
+       age: 55
+       height: 4521
+   - Rahul:
+      name: rahul
+      age: 156
+      height: 454
+
+# reusing some properties using anchors
+
+likings: &likes
+  fav fruit: mango
+  dislikes: curd
+
+person1: 
+  name: John
+  #fav fruit: mango
+  #dislikes: curd
+  <<: *likes
+
+  person2: 
+  name: Jim
+  <<: *likes
+  dislikes: grapes
+
+  # This will look like
+   person2: 
+  name: Jim
+  fav fruit: mango
+  dislikes: grapes
+
+  person3: 
+  name: Joy
+  fav fruit: mango
+  dislikes: curd

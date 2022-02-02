@@ -1,0 +1,50 @@
+# String variables
+name: Sreenivas
+color: "Yellow"
+topic: 'Devops'
+
+bio: |
+    This is used to write multiple lines
+    This ain't a another markup language
+
+# Write a single line using multiple lines
+message: >
+        this is how we write
+        multiple lines 
+        into one single line
+
+# Same as
+message: "this is how we write multiple lines  into one single line"
+
+number: 4522
+marks: 94.22
+booleanValue: No # n, N, false, False, FALSE
+#same for true y,Yes Y
+
+# specify the type
+zero: !!int 0
+positiveNum: !!int 65
+negativeNum: !!int -65
+binaryNum: !!int 0b10101
+octalNum: !!int 06517
+hexaNum: !!int 0x456
+commaValue: !!int 54_25525 # 54,25525
+exponentialNum: !!int 6.023E54
+
+#floating points
+
+marks: !!float 95.24
+infinite: !!float .inf
+not a num: .nan
+
+# null
+surname: !!nul Null # null,Null,~
+~: this is a null
+
+# date and time
+
+Date: !!timestamps 2022-02-02 #year-month-date
+indian_time: 2022-02-02T02:59:43.10 +5:30
+no time zone: 2022-02-02T02:59:43.10
+
+

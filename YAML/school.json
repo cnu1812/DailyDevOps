@@ -1,0 +1,14 @@
+{
+    "School": [ {
+        "name": "Balayesu",
+        "principal": "Anyone",
+        "Students": [
+            {
+                "rno":12,
+                "name":"Jack",
+                "marks": 452
+            }
+        ]
+    }
+    ]
+}

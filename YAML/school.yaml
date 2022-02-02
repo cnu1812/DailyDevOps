@@ -1,0 +1,7 @@
+School: 
+ - name: Balayesu
+ - principal: Someone
+ - Students: 
+    - rno: 12
+      name: Jack
+      marks: 524

@@ -1,0 +1,19 @@
+"apple": "I am a fruit"
+1: "A number"
+---
+# lists
+- apple
+- mango
+- banana
+- Apple    # yaml is case sensitive here apple and Apple both are different according to yaml
+--- # --- seperates into different document
+# block
+cities:
+- New Delhi
+- Mumbai
+- Bangalore # Spaces are important
+---
+cities: ["New Delhi","mumbai"] #both cities are same
+cities: [Banglore,Chennai]
+cities: ['London','Newyork'] # All are correct
+... # Ends the document The end
