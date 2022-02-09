@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: Thank you for the issue. Will be assigned soon tp you if you would like to work on it. Till then have a look at noots.
+        issue-message: Thank you for the issue. Will be assigned soon t0 you if you would like to work on it. Till then have a look at notes.
         pr-message: Hurray! You got it!
