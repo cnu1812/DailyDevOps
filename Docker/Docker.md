@@ -17,12 +17,18 @@ A container is a runnable instance of an image. This is where your application i
 
 ## Containers VS Virual Machines
 
+
+![Container Vs VM](https://user-images.githubusercontent.com/75531528/154963018-417e7334-47bb-4c18-9c97-1748eb73b1d2.png)
+
 Hypervisor is used to create multiple machines on a host operating system and it manages virtual machines.
 
 
 ## What is docker?
 
 Docker is a container platform which allows you to build, test and deploy applications quickly.
+
+![Untitled-2022-02-21-1834](https://user-images.githubusercontent.com/75531528/154963216-873514ab-5d0d-4b79-b29b-c284c4f3b1ac.png)
+
 
 ### Runtime
 - runc
