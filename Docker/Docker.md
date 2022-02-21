@@ -57,7 +57,7 @@ Describes steps to create a Docker image. It’s like a recipe with all ingredie
 
 ![Untitled-2022-02-21-1912](https://user-images.githubusercontent.com/75531528/154968456-4b3b3ce8-f6c0-4ef2-9bf9-a2c40be57fba.png)
 
-Dockerfile commands explanation
+[Dockerfile](https://github.com/cnu1812/DailyDevOps/blob/master/Docker/Dockerfile) commands explanation
 
 - `Run`:  Before building an image if want some configuration that needs to be present in the image. Basically any prerequities required to run an image.
 - `Maintainer`: Gives the information about the author or manager who is managing this image.
