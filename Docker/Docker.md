@@ -48,6 +48,13 @@ This is where Docker images are stored. Docker Hub is a public registry that any
 
 Describes steps to create a Docker image. It’s like a recipe with all ingredients and steps necessary in making your dish. This file can be used to create Docker Image. These images can be pulled to create containers in any environment. These images can also be store online at docker hubs. When you run docker image you get docker containers. The container will have the application with all its dependencies.
 
+Dockerfile commands explanation
+
+- `Run`:  Before building an image if want some configuration that needs to be present in the image. Basically any prerequities required to run an image.
+- `Maintainer`: Gives the information about the author or manager who is managing this image.
+- `Expose`: This command is used to specify the port number in which the container is running its process.
+- `CMD`:  To run a command as soon as container is launched. CMD command is different from RUN because RUN is used at the time of building an image and CMD used to run command when container is started.
+
 
 
 
