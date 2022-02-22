@@ -92,6 +92,9 @@ Command used to check the ip address of you own computer
 
 # OSI MODEL OPEN SYSTEM INTERCONNECTION MODEL
 
+![Untitled-2022-02-21-1932](https://user-images.githubusercontent.com/75531528/155082223-03da8bc3-a91b-414a-8bd5-0b3228c31a74.png)
+
+
 |Layer|Working|
 |-----|-------|
 |Application|Implemented in software.used by client eg.whatsapp|
