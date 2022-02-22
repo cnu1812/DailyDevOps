@@ -30,9 +30,19 @@ Docker is a container platform which allows you to build, test and deploy applic
 ![Untitled-2022-02-21-1834](https://user-images.githubusercontent.com/75531528/154963216-873514ab-5d0d-4b79-b29b-c284c4f3b1ac.png)
 
 
-### Runtime
+### OCI (Open Container Initiative)
+
+OCI was a process which defines two container related specifications:
+
+- Image Spec
+- Container runtime Spec.
 - runc
 - containerd
+
+Docker uses these two specification in its different layers of Docker Engine Architecture.
+
+**Docker Engine Architecture**
+
 
 ## Docker Architecture
 
@@ -54,6 +64,8 @@ This is where Docker images are stored. Docker Hub is a public registry that any
 
 Describes steps to create a Docker image. It’s like a recipe with all ingredients and steps necessary in making your dish. This file can be used to create Docker Image. These images can be pulled to create containers in any environment. These images can also be store online at docker hubs. When you run docker image you get docker containers. The container will have the application with all its dependencies.
 
+Docker can build images automatically by reading instructions from a DockerFile. A single image can be used to create multiple containers.
+
 
 ![Untitled-2022-02-21-1912](https://user-images.githubusercontent.com/75531528/154968456-4b3b3ce8-f6c0-4ef2-9bf9-a2c40be57fba.png)
 
@@ -63,6 +75,41 @@ Describes steps to create a Docker image. It’s like a recipe with all ingredie
 - `Maintainer`: Gives the information about the author or manager who is managing this image.
 - `Expose`: This command is used to specify the port number in which the container is running its process.
 - `CMD`:  To run a command as soon as container is launched. CMD command is different from RUN because RUN is used at the time of building an image and CMD used to run command when container is started.
+
+## Docker Components
+
+![image](https://dev-to-uploads.s3.amazonaws.com/i/o2dmqkdzcscl4atbhoj3.png)
+
+## Docker Image
+
+- Docker Image is run to create a docker container. Images are immutable. Once built, the files making up an image do not change. Images can be stored locally or remote locations like hub.docker.com.
+- Images are built in layers. Each layer is an immutable file, but is a collection of files and directories. The last layer can be used to write out data to. Layers receive an ID, calculated via a SHA 256 hash of the layer contents.The Image ID listed by docker commands (ie ‘docker images’) is the first 12 characters of the hash. These hash values are referred to by ‘tag’ names.
+- Command used to list hash values ` docker images -q --no-trunc`.
+
+## Basic Commands
+
+` docker ps`__ List all containers.
+
+` docker run ImageName/ID `__ Runs the image. If image is not present locally then it will pull from docker hub.
+
+` docker start ContainerName/ID`__ starts the container.
+
+` docker kill ContainerName/ID`__ Stops a running container.
+
+` docker rm ContainerName/ID`__ Deletes a stopped container.
+
+` docker rm $(docker ps -a -q)`__ Delete all stopped containers.
+
+`docker images -q --no-trunc`__ lista the hash value.
+
+` docker pull ngnix:latest ` (latest is tag/version)__ Pulls the image from docke hub.
+
+` docker images `__ Lists Docker Images.
+
+` docker rmi image`__ deletes a Docker Image if no container is using it.
+
+` docker rmi $(docker images -q)`__ deletes all Docker images.
+
 
 
 
