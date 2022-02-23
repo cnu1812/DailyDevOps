@@ -73,10 +73,13 @@ Docker can build images automatically by reading instructions from a DockerFile.
 
 [Dockerfile](https://github.com/cnu1812/DailyDevOps/blob/master/Docker/Dockerfile) commands explanation
 
+- `From`: which tells us what image to base this off of. This is the multi-layered approach that makes Docker so efficient and powerful. In this instance, it’s using the php:5.6-apache Docker image, which again references a Dockerfile to automate the build process.
 - `Run`:  Before building an image if want some configuration that needs to be present in the image. Basically any prerequities required to run an image.
 - `Maintainer`: Gives the information about the author or manager who is managing this image.
 - `Expose`: This command is used to specify the port number in which the container is running its process.
 - `CMD`:  To run a command as soon as container is launched. CMD command is different from RUN because RUN is used at the time of building an image and CMD used to run command when container is started.
+- `ENV`: This sets the environment variables, which can be used in the Dockerfile and any scripts that it calls. These are persistent with the container too, so they can be referenced at any time. In the case of the WordPress Dockerfile, we can see that it sets the version number, the upstream version number, and then the SHA1 hash of the download.
+- `COPY`: It can copy a file (in the same directory as the Dockerfile) to the container. You can do this for things like custom configuration files or like in this instance, a file to run commands after the container has been set up.
 
 ## Docker Components
 
