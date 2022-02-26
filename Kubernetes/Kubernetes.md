@@ -16,4 +16,6 @@ Kubernetes is an open-source container orchestration system for automating softw
 
 ## kubectl and minikube installation
 
+## Example pod, deployment
+
 
