@@ -13,3 +13,7 @@ This is where Kubernetes comes into play.
 ## What is Kubernetes?
 
 Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management.
+
+## kubectl and minikube installation
+
+
