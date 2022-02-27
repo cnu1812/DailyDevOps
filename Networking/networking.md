@@ -20,7 +20,7 @@
  **World Wide Web**
      -> The world wide web commonly known as the web, is an information system where documents and other web resources are identified by URL's, which may be interlinked by hyperlinks and are accessible over the internet.
 
- ## Client Srever Architecture
+ ## Client Server Architecture
 
 ![client srever architecture](https://madooei.github.io/cs421_sp20_homepage/assets/client-server-1.png)
 
