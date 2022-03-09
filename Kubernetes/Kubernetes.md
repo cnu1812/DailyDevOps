@@ -19,7 +19,8 @@ Now, let's imagine the team develops a booking application using a microservice 
 
 In this case, the UI remains the website that the user interacts with. However, the business logic is split into smaller, independent units, such as login, payment, confirmation, and many more. These units are stored in separate repositories and are written using the programming language of choice (e.g. Go for the payment service and Python for login service). To interact with other services, each unit exposes an API. And lastly, the data layer contains functions that store and retrieve customer and order data. As expected, each unit is released using its own binary.
 
-image
+![micro](https://user-images.githubusercontent.com/75531528/157449331-4518deb2-797c-44e4-aa9a-3045fb7638c9.png)
+
 
 In a microservice architecture, application tiers are managed independently, as different units. Each unit has the following characteristics:
 
