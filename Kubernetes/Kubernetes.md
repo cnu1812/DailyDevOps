@@ -1,5 +1,17 @@
 ## Monolithic Applications
 
+Imagine a team develops a booking application using a monolithic approach. In this case, the UI is the website that the user interacts with. The business logic contains the code that provides the booking functionalities, such as search, booking, payment, and so on. These are written using one programming language (e.g. Java or Go) and stored in a single repository. The data layer contains functions that store and retrieve customer data. All of these components are managed as a unit, and the release is done using a single binary.
+
+image
+
+In a monolithic architecture, application tiers can be described as:
+
+- part of the same unit
+- managed in a single repository
+- sharing existing resources (e.g. CPU and memory)
+- developed in one programming language
+- released using a single binary
+
 ## Microservices
 
 
