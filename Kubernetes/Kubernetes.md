@@ -54,15 +54,21 @@ A Kubernetes cluster is composed of a collection of distributed physical or virt
 
 ### Control Plane (Master Node)
 
-image
+![Untitled-2022-02-25-1155](https://user-images.githubusercontent.com/75531528/157451578-b8449549-9746-46c4-982f-86965525b57b.png)
+
 
 The control plane consists of components that make global decisions about the cluster. These components are the:
 
 kube-apiserver
+
 kube-scheduler
+
 kube-controlmanager
+
 etcd
+
 kubelet
+
 kubeproxcy
 
 ## kubectl and minikube installation
