@@ -2,7 +2,8 @@
 
 Imagine a team develops a booking application using a monolithic approach. In this case, the UI is the website that the user interacts with. The business logic contains the code that provides the booking functionalities, such as search, booking, payment, and so on. These are written using one programming language (e.g. Java or Go) and stored in a single repository. The data layer contains functions that store and retrieve customer data. All of these components are managed as a unit, and the release is done using a single binary.
 
-image
+
+![mono](https://user-images.githubusercontent.com/75531528/157446111-70946705-a5a7-40a7-ac3f-b5d068ea0773.png)
 
 In a monolithic architecture, application tiers can be described as:
 
