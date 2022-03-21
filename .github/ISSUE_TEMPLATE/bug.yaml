@@ -21,9 +21,8 @@ body:
       value: |
         ## Thanks for taking the time to add a issue!
         To claim this issue, please ask for it below. 
-        The maintainers will assign a contributor to this issue.
   - type: markdown
     attributes:
       value: |
-        You can also join our slack community [here](https://join.slack.com/t/dokcommunity/shared_invite/zt-10v7uncvp-jNFwulsVWvUO0SKMDTjwAw)
-        Feel free to check out other cool repositories of the DOK Community [here](https://github.com/dokc)
+        You can also connect with me [here](https://twitter.com/cnu1812)
+        Feel free to check out other cool repositories [here](https://github.com/cnu1812)
