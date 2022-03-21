@@ -59,17 +59,17 @@ A Kubernetes cluster is composed of a collection of distributed physical or virt
 
 The control plane consists of components that make global decisions about the cluster. These components are the:
 
-- kube-apiserver: Gatekeeper for the entire cluster. CRUD operations for servers go through the API. API server configures the API objects such as pods, services, replication controllers () and deployments. It exposes API for almost every operation. How to interact with this API? Using a tool called kubectl aka kubecontrol. It talks to the API server to perform any operations that we issue from cmd. In most cases, the master node does not contain containers. It just manages worker nodes, and also makes sure that the cluster of worker nodes are running healthy and successfully.
+- **kube-apiserver:** Gatekeeper for the entire cluster. CRUD operations for servers go through the API. API server configures the API objects such as pods, services, replication controllers () and deployments. It exposes API for almost every operation. How to interact with this API? Using a tool called kubectl aka kubecontrol. It talks to the API server to perform any operations that we issue from cmd. In most cases, the master node does not contain containers. It just manages worker nodes, and also makes sure that the cluster of worker nodes are running healthy and successfully.
 
-- kube-scheduler:It is responsible for physically scheduling Pods across multiple nodes. Depending upon the constraints mentioned in the configuration file, scheduler schedules these Pods accordingly. For example, if you mention CPU has 1 core, memory is 10 GB, DiskType is SSD, etc. Once this artifact is passed to API server, the scheduler will look for the appropriate nodes that meet these criteria & will schedule the Pods accordingly.
+- **kube-scheduler:**It is responsible for physically scheduling Pods across multiple nodes. Depending upon the constraints mentioned in the configuration file, scheduler schedules these Pods accordingly. For example, if you mention CPU has 1 core, memory is 10 GB, DiskType is SSD, etc. Once this artifact is passed to API server, the scheduler will look for the appropriate nodes that meet these criteria & will schedule the Pods accordingly.
 
-- kube-controlmanager: The component that handles controller processes. It ensures that the desired configuration is propagated to resources
+- **kube-controlmanager:** The component that handles controller processes. It ensures that the desired configuration is propagated to resources
 
-- etcd: Distributed key-value lightweight database. Central database to store current cluster state at any point of time. Any component of Kubernetes can query etcd to understand the state of the cluster so this is going to be the single source of truth for all the nodes, components and the masters that are forming Kubernetes cluster.
+- **etcd:** Distributed key-value lightweight database. Central database to store current cluster state at any point of time. Any component of Kubernetes can query etcd to understand the state of the cluster so this is going to be the single source of truth for all the nodes, components and the masters that are forming Kubernetes cluster.
 
-- kubelet:  The agent that runs on every node and notifies the kube- apiserver that this node is part of the cluster.
+- **kubelet:**  The agent that runs on every node and notifies the kube- apiserver that this node is part of the cluster.
 
-- kubeproxy: Responsible for maintaining the entire network configuration. It maintains the distributed network across all the nodes, across all the pods, and all containers. Also exposes services to the outside world. It is the core networking component inside Kubernetes. The kube-proxy will feed its information about what pods are on this node to iptables. iptables is a firewall in Linux and can route traffic. So when a new pod is launched, kube-proxy is going to change the iptable rules to make sure that this pod is routable within the cluster.
+- **kubeproxy:** Responsible for maintaining the entire network configuration. It maintains the distributed network across all the nodes, across all the pods, and all containers. Also exposes services to the outside world. It is the core networking component inside Kubernetes. The kube-proxy will feed its information about what pods are on this node to iptables. iptables is a firewall in Linux and can route traffic. So when a new pod is launched, kube-proxy is going to change the iptable rules to make sure that this pod is routable within the cluster.
 
 ## kubectl and minikube installation
 - Before installing kubectl and minikube, you have to install either docker desktop or any virtual machine. Docker desktop is recomended.
