@@ -61,7 +61,7 @@ The control plane consists of components that make global decisions about the cl
 
 - **kube-apiserver:** Gatekeeper for the entire cluster. CRUD operations for servers go through the API. API server configures the API objects such as pods, services, replication controllers () and deployments. It exposes API for almost every operation. How to interact with this API? Using a tool called kubectl aka kubecontrol. It talks to the API server to perform any operations that we issue from cmd. In most cases, the master node does not contain containers. It just manages worker nodes, and also makes sure that the cluster of worker nodes are running healthy and successfully.
 
-- **kube-scheduler:**It is responsible for physically scheduling Pods across multiple nodes. Depending upon the constraints mentioned in the configuration file, scheduler schedules these Pods accordingly. For example, if you mention CPU has 1 core, memory is 10 GB, DiskType is SSD, etc. Once this artifact is passed to API server, the scheduler will look for the appropriate nodes that meet these criteria & will schedule the Pods accordingly.
+- **kube-scheduler:** It is responsible for physically scheduling Pods across multiple nodes. Depending upon the constraints mentioned in the configuration file, scheduler schedules these Pods accordingly. For example, if you mention CPU has 1 core, memory is 10 GB, DiskType is SSD, etc. Once this artifact is passed to API server, the scheduler will look for the appropriate nodes that meet these criteria & will schedule the Pods accordingly.
 
 - **kube-controlmanager:** The component that handles controller processes. It ensures that the desired configuration is propagated to resources
 
