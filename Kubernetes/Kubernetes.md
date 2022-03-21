@@ -76,11 +76,12 @@ The control plane consists of components that make global decisions about the cl
 - kubectl is command line tool can install [here](https://kubernetes.io/docs/tasks/tools) download the latest release for your according operating system.
 - Then install the [minikube](https://minikube.sigs.k8s.io/docs/start/)  and set your path-variables so that your system can recognize kubectl commands.
 - Use this commands to get started
-     minikube version
-     minikube start --driver=docker
-     minikube status
-     kubectl cluster-info
-     get node
+
+       minikube version
+       minikube start --driver=docker
+       minikube status
+       kubectl cluster-info
+       get node
 - Stuck anywhere you can refer [this](https://www.youtube.com/watch?v=xhxmExC9N1U&t=1305s)
 
 ## Example pod, deployment
